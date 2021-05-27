@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" fx:controller="application.requete2Controller" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #7b1313;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="57.0" layoutY="37.0" text="Jeux ou films avec un titre donné qui est disponible à la location ?" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="affichage" editable="false" layoutX="186.0" layoutY="129.0" prefHeight="229.0" prefWidth="230.0" />
+      <Button fx:id="lancer" layoutX="365.0" layoutY="78.0" mnemonicParsing="false" onAction="#requete" text="Lancer" />
+      <TextField fx:id="textfield1" layoutX="186.0" layoutY="78.0" promptText="Introduiser le titre" />
+   </children>
+</AnchorPane>
